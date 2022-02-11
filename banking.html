@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-5xl mt-12 font-semibold text-center">let's get some <span class="text-indigo-500">mooooney!!!!!!!!!!!!!!!</span></h1>
+    <main class="w-3/4 mx-auto">
+        <!-- balance and transection  -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-blue-300 p-8 rounded">
+                    <h3 class="text-white text-2xl">Deposite</h3>
+                    <h4 class="text-white text-4xl">$<span id="deposite-total-amount">00</span></h4>
+                </div>
+                <div class="bg-green-300 p-8 rounded">
+                    <h3 class="text-white text-2xl">Withdrow</h3>
+                    <h4 class="text-white text-4xl">$<span id="withdrow-total-amount">00</span></h4>
+                </div>
+                <div class="bg-yellow-300 p-8 rounded">
+                    <h3 class="text-white text-2xl">Balance</h3>
+                    <h4 class="text-white text-4xl">$<span id="total-balance">1240</span></h4>
+                </div>
+                
+                
+            </div>
+        </section>
+        <!-- deposit and withdrow  -->
+        <section class="mt-10">
+            <div class="grid grid-cols-2 gap-4">
+                
+                <div class="bg-red-100 p-8 rounded">
+                    <h3 class="text-2xl ">Please Deposit</h3>
+                    <div>
+                        <input id="deposite-input" class=" pl-2 block  w-11/12 border border-inherit rounded mb-2" type="text" placeholder="$ amount you want to deposite.">
+                        <button id="deposite-btn" class=" px-4  text-white bg-yellow-600 rounded-md">Diposite</button>
+                        <p class="mt-5 text-center text-red-500" id="deposit-warning"></p>
+                    </div>
+                </div>
+                <div class="bg-purple-100 p-8 rounded">
+                    <h3 class="text-2xl ">Please Withdrow</h3>
+                    <div>
+                        <input id="withdrow-input" class=" pl-2 block  w-11/12 border border-inherit rounded mb-2" type="text" placeholder="$ amount you want to withdrow.">
+                        <button id="withdrow-btn" class=" px-4  text-white bg-yellow-600 rounded-md">withdrow</button>
+                        <p class="mt-5 text-center text-red-500" id="withdrow-warning"></p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <script src="./js/banking.js"></script>
+</body>
+</html>
